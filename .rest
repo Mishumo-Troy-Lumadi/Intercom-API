@@ -1,0 +1,26 @@
+### Create User
+POST http://localhost:3001/user
+User-Agent: Test
+Content-Type: application/json 
+
+{
+    "username":"connerkid",
+    "email":"tmlumadi@gmail.com",
+    "password":"changeme",
+    "role":"admin"
+}
+
+### Get User
+GET http://localhost:3001/user/62c400b6a1c8f1f8f1fa63b8
+User-Agent: Test
+Content-Type: application/json 
+
+### Sign in User
+POST http://localhost:3001/auth
+User-Agent: Test
+Content-Type: application/json 
+
+{
+    "email":"tmlumadi@gmail.com",
+    "password":"changeme"
+}
